@@ -1,0 +1,6 @@
+print(…, sep=' ', end='\n', file=sys.stdout, flush=False)  
+range(start, stop, step=1)
+enumerate(iter, start=0)
+int(x, base=10)  
+pow(x, y, z=None)
+seq.sort(*, key=None, reverse=None)

@@ -1,0 +1,2 @@
+class DerivedClassName(BaseClassName):
+    pass
