@@ -4,6 +4,6 @@ Write a Python program to display the current date and time.
 Hint:
 Use datetime module
 
-Sample Output : 
+Sample Result : 
 Current date and time : 
 2014-07-05 14:34:14

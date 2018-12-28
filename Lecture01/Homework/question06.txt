@@ -1,0 +1,9 @@
+Requirement:
+Write a Python script that takes input from 
+the user and displays that input back in upper 
+and lower cases. 
+
+Sample Result:
+What's your favourite language? english                                                                       
+My favourite language is  ENGLISH                                                                             
+My favourite language is  english 
