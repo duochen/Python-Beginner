@@ -1,5 +1,8 @@
 Requiement:
-Write a Python program which accepts the radius of a circle from the user and compute the area. Go to the editor.
+Write a Python program which accepts the radius of a circle from the user and compute the area. 
+
+Hint:
+Use math module and pi function
 
 Sample Output : 
 r = 1.1
