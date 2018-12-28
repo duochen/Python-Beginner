@@ -1,0 +1,6 @@
+$ python
+>>> course = "python"
+>>> rating = 3
+>>> print(course, rating)
+>>> # In the interactive shell you don't need "print"
+>>> course, rating # is the same as: print course, rating

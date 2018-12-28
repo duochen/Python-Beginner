@@ -1,0 +1,5 @@
+Requirement:
+1. Type "python" at the command-line to start the python interactive shell.
+2. Create a variable called "course" and assign it the value "python".
+3. Create a variable called "rating" and assign it an integer value (anything you like).
+4. Print both variables.
