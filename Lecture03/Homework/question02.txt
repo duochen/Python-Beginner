@@ -1,0 +1,6 @@
+Requirement:
+Write a Python function to sum all the numbers in a list.
+
+Sample Result:
+Sample Input: (8, 2, 3, 0, 7)
+Sample Output: 20
