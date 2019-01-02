@@ -1,0 +1,6 @@
+Requirement:
+Write a Python function to find the Max of three numbers.
+
+Sample Result:
+Sample Input: 3, 6, -5
+Sample Output: 6
