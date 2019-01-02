@@ -1,0 +1,11 @@
+Requirement:
+Create a list of integers which specify the length of each word in a certain 
+sentence ("the quick brown fox jumps over the lazy dog"), but only if the word 
+is not the word "the".
+
+Note:
+Use a list comprehension to implement it.
+
+Sample Result:
+['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+[5, 5, 3, 5, 4, 4, 3]
