@@ -1,0 +1,7 @@
+Requirement:
+Given a list of fruits (['apple', 'mango', 'banana','cherry'] ), use dict comprehension 
+to create a dictionary with fruits, the list elements as the keys and 
+the length of each string as the values.
+
+Sample Result:
+{'apple': 5, 'mango': 5, 'banana': 6, 'cherry': 6}

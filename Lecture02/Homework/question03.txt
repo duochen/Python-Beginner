@@ -1,0 +1,7 @@
+Requirement:
+Write a Python program to iterate over a dictionary ({'x': 10, 'y': 20, 'z': 30}) using for loops.
+
+Sample Result:
+y -> 20                                                                                                       
+z -> 30                                                                                                       
+x -> 10 
