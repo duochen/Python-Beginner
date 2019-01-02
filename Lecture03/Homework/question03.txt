@@ -1,0 +1,14 @@
+Requirement:
+Define a function called student which takes 3 arguments: firstname, lastname and grade. 
+The default value for lastname is 'Mark' and the default value for grade is 'Fifth'.
+Call this function by assigning different values to the arguments.
+
+Sample Result:
+Sample Input:
+student('John')   
+student('John', 'Gates')   
+student('John', 'Gates', 'Seventh')   
+Sample Output:
+First Name:  John   Last Name:  Mark   Grade:  Fifth
+First Name:  John   Last Name:  Gates   Grade:  Fifth
+First Name:  John   Last Name:  Gates   Grade:  Seventh
