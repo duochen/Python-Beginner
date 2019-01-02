@@ -1,0 +1,5 @@
+Requirement:
+Create a file called output.txt. First add a new line to the file: "Welcome to robotics time.". 
+And then print the content of output.txt.
+
+Sample Output:
