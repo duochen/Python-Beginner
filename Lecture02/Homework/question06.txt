@@ -1,0 +1,6 @@
+Requirement:
+Write a Python program to parse a string ("246.2458")to Float or Integer.
+
+Sample Result:
+246.2458                                                                                                      
+246 
