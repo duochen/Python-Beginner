@@ -1,0 +1,13 @@
+Requirement:
+Write a function to find the maximum in a list of numbers 
+using non-keyword arguments.
+
+Note:
+The following function looks like the following:
+def maximum(*numbers):
+
+Sample Result:
+Sample Input:
+3, 2, 8
+Sample Output:
+8
