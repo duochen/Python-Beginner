@@ -1,0 +1,5 @@
+Requirement:
+Use filter function to find all the negative numbers in the range(-5, 5)
+
+Sample Result:
+[-5, -4, -3, -2, -1]
