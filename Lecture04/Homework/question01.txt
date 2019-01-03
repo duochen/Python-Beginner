@@ -1,0 +1,5 @@
+Requirement:
+Use list comprehension to find all of the numbers from 1-100 that are divisible by 7.
+
+Sample Result:
+[0, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98]
