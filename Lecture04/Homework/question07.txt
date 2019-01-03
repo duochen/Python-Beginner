@@ -1,0 +1,9 @@
+Requirement:
+Create a simple generator function which returns 'a', 'b', 'c' and 'd' and 
+uses this function to print each item.
+
+Sample Result:
+a
+b
+c
+d

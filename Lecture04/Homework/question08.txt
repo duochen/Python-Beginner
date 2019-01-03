@@ -1,0 +1,8 @@
+Requirement:
+Use decorator to implement a function which takes function as argument. It will print a message
+before and after the argument function is called.
+
+Sample Result:
+Before the function is called
+Hello World!
+After the function is called
