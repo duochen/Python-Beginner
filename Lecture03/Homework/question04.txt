@@ -1,6 +1,6 @@
 Requirement:
 Write a function to find the maximum in a list of numbers 
-using non-keyword arguments.
+using variable-length argument.
 
 Note:
 The following function looks like the following:
