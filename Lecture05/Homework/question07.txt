@@ -1,0 +1,7 @@
+Requirement:
+Use try...except: to catch ZeroDivisionError exception(for example 5 /0)
+and print a message with exception
+
+Sample Result:
+Got a dvide by zero! The exception was: division by zero
+
