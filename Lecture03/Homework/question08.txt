@@ -1,0 +1,9 @@
+Requirement:
+Write a Python function to check whether a number is in a given range.
+
+Sample Result:
+Sample Input:
+range(3,9)
+5
+Sample Output:
+5 is in the rang
