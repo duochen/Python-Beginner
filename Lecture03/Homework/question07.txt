@@ -1,0 +1,11 @@
+Requirement:
+Write a Python function that accepts a string and calculate 
+the number of upper case letters and lower case letters.
+
+Sample Result:
+Sample Input:
+The quick Brow Fox
+Sample Output:
+No. of Upper case characters :  3
+No. of Lower case Characters :  12
+
