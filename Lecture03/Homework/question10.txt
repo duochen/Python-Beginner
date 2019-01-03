@@ -1,0 +1,8 @@
+Requirement:
+Write a Python function to multiply all the numbers in a list.
+
+Sample Result:
+Sample Input:
+(8, 2, 3, -1, 7)
+Sample Output:
+-336
