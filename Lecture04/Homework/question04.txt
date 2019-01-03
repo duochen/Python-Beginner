@@ -1,0 +1,5 @@
+Requirement:
+Use filter function to find the numbers which are greater than 4 in the list [1,2,3,4,5,6].
+
+Sample Result:
+[5, 6]

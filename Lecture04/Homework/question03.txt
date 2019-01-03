@@ -1,0 +1,8 @@
+Requirement:
+Use map function to takes a list of names and returns a list of the lengths of those names
+
+Sample Result:
+Sample Input:
+["Mary", "Isla", "Sam"]
+Sample Output:
+[4, 4, 3]

@@ -1,0 +1,12 @@
+Requirement:
+Use lambda fucntion to multiply argument a with argument b and print the result:
+
+Note:
+The lambda's general form is:
+lambda arg1, arg2, ...argN : expression using arguments
+
+Smaple Result:
+Sample Input:
+5, 6
+Sample Output:
+30
