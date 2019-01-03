@@ -1,0 +1,6 @@
+Requirement:
+Create a class named MyClass, with a property named x. 
+Create an object named p of MyClass, and print the value of x
+
+Sample Result:
+5

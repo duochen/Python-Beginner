@@ -1,0 +1,7 @@
+Requirement:
+Write a Python program to implement pow(x, n).
+
+SampleResult:
+pow(2, -3)  => 0.125
+pow(3,5)    => 243
+pow(100,0)  => 1

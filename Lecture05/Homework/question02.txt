@@ -1,0 +1,9 @@
+Requirement:
+Create a class named Person, use the __init__() function to assign values for name and age.
+Create an object of Person with name ("John") and age (36). Print both name and age. Change the age to 40
+and print it out.
+
+Sample Result:
+John
+36
+40

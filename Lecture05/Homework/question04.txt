@@ -1,0 +1,11 @@
+Requirement:
+Write a Python class named Circle constructed by a radius and 
+two methods which will compute the area and the perimeter of a circle.
+
+Sample Result:
+Sample Input:
+Radius: 8
+Sample Output:
+Area: 200.96
+Perimeter: 50.24
+
