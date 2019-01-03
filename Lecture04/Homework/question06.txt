@@ -1,0 +1,6 @@
+Requirement:
+Use iterator to print each item in a string list.
+
+Sample Result:
+Sample Input:
+['I', 'love", 'Python']
