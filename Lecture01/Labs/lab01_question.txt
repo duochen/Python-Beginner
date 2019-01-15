@@ -1,0 +1,23 @@
+Type the following text into a single file named lab01.py. 
+This is important as python works best with files ending in .py
+
+--------------------------------------
+
+print("Hello World!")
+print("Hello Again!")
+print("I'd much rather you 'not'.")
+print('I "said" do not touch this.')
+
+---------------------------------------
+
+Then in Terminal run the file by typing:
+> python lab01.py
+
+You should see the following result:
+
+Hello World!
+Hello Again!
+I'd much rather you 'not'.
+I "said" do not touch this.
+
+
