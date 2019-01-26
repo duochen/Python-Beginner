@@ -1,17 +1,14 @@
 class MyClass:
     """A simple example class"""
-    num = 12345
+    def __init__(self, message, firstname):
+        self.message = message
+        self.firstname = firstname
+   
     def greet(self):
-        return "Hello world!"
+        return self.message + ' ' + self.firstname
+    
+    def add(self, a, b):
+        return a + b
 
-# Attribute References
-MyClass.num        # => 12345           (int object)        
-MyClass.greet      # => <function f>    (function object)   
-
-x = MyClass()
+x = MyClass("Hello!", "Duo")
 print(x.greet())
-
-print(type(x.greet))            # method
-print(type(MyClass.greet))      # function
-print(x.num is MyClass.num)     # True
-print(x.greet is MyClass.greet) # False
