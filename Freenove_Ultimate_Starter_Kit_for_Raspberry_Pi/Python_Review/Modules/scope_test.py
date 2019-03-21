@@ -1,4 +1,4 @@
-import scopetest
+import scope
 
 z = 2
 scopetest.f(z)
