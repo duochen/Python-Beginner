@@ -1,4 +1,3 @@
-"""modtest: our test module"""
 def f(x):
     return x
 

@@ -1,4 +1,4 @@
-from modtest import *
+from module import *
 
 print(f(3))
 print(a)
