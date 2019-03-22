@@ -1,0 +1,4 @@
+Requirement:
+1. Write a function called fish() in a file called tuna.py
+   Inside fish() function, just print "I am a tuna fish!"
+2. Create another file called tuna_test.py which call fish() function
