@@ -1,6 +1,8 @@
-class MyError(Exception):
-    def __init__(self, msg):
-        self.msg = msg
-
-error = MyError("something wrong")
-print(error.msg)
+try:
+    print("a")
+except:
+    print("b")
+else:
+    print("c")
+finally:
+    print("d")   
