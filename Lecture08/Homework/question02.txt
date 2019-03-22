@@ -1,0 +1,5 @@
+Requirement:
+1. Define a custom exception class which takes a string message as attribute
+
+Hint:
+To define a custom exception, we need to define a class inherited from exception
