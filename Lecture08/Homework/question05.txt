@@ -1,0 +1,8 @@
+Requirement:
+1. Write a function called addition which takes two arguments, add them and return the result.
+2. If the result is zero, raise an exception.
+3. use try-except block to catch the exception
+
+Hint:
+def addition(a, b):
+    ...
