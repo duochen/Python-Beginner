@@ -1,0 +1,5 @@
+Requirement:
+Import module math, and use its functions to complete the following exercises:
+a). Write a single expression that rounds the value of -4.3
+    and then take the absolute value of that result.
+b). Write an expression that takes the ceiling of sine of 34.5.

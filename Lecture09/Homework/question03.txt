@@ -1,0 +1,3 @@
+Requirement:
+1. Import log function from math module
+2. Calculate and print log(10)
