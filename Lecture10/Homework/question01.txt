@@ -6,3 +6,6 @@ B3
 B4
 B5
 B6
+
+Hint:
+Consider using the with method to create the file and the for loop to write the list items inside the file.
