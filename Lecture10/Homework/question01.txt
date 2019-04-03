@@ -1,0 +1,8 @@
+Requirement:
+Consider the following list: 
+ids=["B3","\nB4","\nB5","\nB6"]
+Then, write a program that produces a text file which looks like this:
+B3
+B4
+B5
+B6
