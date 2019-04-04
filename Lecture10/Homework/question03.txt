@@ -1,0 +1,3 @@
+Requirement:
+Read the contents from the file called "numbers.json" which
+is created in question02 and print them on the console.
