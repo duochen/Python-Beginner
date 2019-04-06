@@ -1,5 +1,6 @@
 try:
     print("a")
+    x=1/0
 except:
     print("b")
 else:

@@ -8,3 +8,5 @@ def max_of_three(x, y, z):
 
 print(max_of_three(3, 6, -5))   # => 6 
 
+print(max(3, 6, -5))
+
