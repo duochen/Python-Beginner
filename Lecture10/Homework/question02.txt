@@ -1,0 +1,6 @@
+Requirement:
+Write the following numbers into a json file called "numbers.json":
+2, 3, 5, 7, 11, 13
+
+Hint:
+Use json.dump() method
