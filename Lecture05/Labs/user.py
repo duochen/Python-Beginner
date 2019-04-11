@@ -17,7 +17,7 @@ user2.describe_user()
 user2.greet_user()
 
 class Admin(User):
-    def __init__(self, first_name, last_name,privileges):
+    def __init__(self, first_name, last_name, privileges):
         super(Admin, self).__init__(first_name, last_name)
         self.privileges = privileges
 
