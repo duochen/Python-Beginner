@@ -9,3 +9,5 @@ student('John', 'Gates')    # => First Name:  John   Last Name:  Gates   Grade: 
 
 # 3 positional arguments
 student('John', 'Gates', 'Seventh') # => First Name:  John   Last Name:  Gates   Grade:  Seventh
+
+student("Scott", 'Seventh')
