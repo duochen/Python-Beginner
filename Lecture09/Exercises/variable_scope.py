@@ -1,7 +1,7 @@
 x = 3
 def my_func():
     x = 5
-    print(x)
+    print(x)   # => 5
 
 my_func()
-print(x)
+print(x)   # => 3
