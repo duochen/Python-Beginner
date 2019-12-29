@@ -6,4 +6,5 @@ print('Before modification:', p.name)
 
 # Set name to 'John'
 setattr(p, 'name', 'John')
-print('After modification:', p.name)
+name = getattr(p, 'name')
+print('After modification:',name)
