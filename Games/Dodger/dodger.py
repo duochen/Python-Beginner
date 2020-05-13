@@ -4,7 +4,7 @@ from pygame.locals import *
 WINDOWWIDTH = 600
 WINDOWHEIGHT = 600
 TEXTCOLOR = (0, 0, 0)
-BACKGROUNDCOLOR = (230, 230, 230) 
+BACKGROUNDCOLOR = (230, 230, 230)
 FPS = 60   # Number of frames per second
 ALIENMINSIZE = 10
 ALIENMAXSIZE = 40
