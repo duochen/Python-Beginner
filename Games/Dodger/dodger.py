@@ -4,13 +4,13 @@ from pygame.locals import *
 WINDOWWIDTH = 600
 WINDOWHEIGHT = 600
 TEXTCOLOR = (0, 0, 0)
-BACKGROUNDCOLOR = (255, 255, 255)
-FPS = 60
-BADDIEMINSIZE = 10
-BADDIEMAXSIZE = 40
-BADDIEMINSPEED = 1
-BADDIEMAXSPEED = 8
-ADDNEWBADDIERATE = 6
+BACKGROUNDCOLOR = (230, 230, 230) # (255, 255, 255)
+FPS = 60   # Number of frames per second
+ALIENMINSIZE = 10
+ALIENMAXSIZE = 40
+ALIENMINSPEED = 1
+ALIENMAXSPEED = 8
+ADDNEWALIENRATE = 6
 PLAYERMOVERATE = 5
 
 def terminate():
@@ -27,8 +27,8 @@ def waitForPlayerToPressKey():
                     terminate()
                 return
 
-def playerHasHitBaddie(playerRect, baddies):
-    for b in baddies:
+def playerHasHitBaddie(playerRect, aliens):
+    for b in aliens:
         if playerRect.colliderect(b['rect']):
             return True
     return False
@@ -56,7 +56,7 @@ pygame.mixer.music.load('background.mid')
 # Set up images.
 playerImage = pygame.image.load('player.png')
 playerRect = playerImage.get_rect()
-baddieImage = pygame.image.load('baddie.png')
+alienImage = pygame.image.load('alien.png')
 
 # Show the "Start" screen.
 windowSurface.fill(BACKGROUNDCOLOR)
@@ -68,12 +68,12 @@ waitForPlayerToPressKey()
 topScore = 0
 while True:
     # Set up the start of the game.
-    baddies = []
+    aliens = []
     score = 0
     playerRect.topleft = (WINDOWWIDTH / 2, WINDOWHEIGHT - 50)
     moveLeft = moveRight = moveUp = moveDown = False
     reverseCheat = slowCheat = False
-    baddieAddCounter = 0
+    alienAddCounter = 0
     pygame.mixer.music.play(-1, 0.0)
 
     while True: # The game loop runs while the game part is playing.
@@ -124,18 +124,18 @@ while True:
                 # If the mouse moves, move the player where to the cursor.
                 playerRect.centerx = event.pos[0]
                 playerRect.centery = event.pos[1]
-        # Add new baddies at the top of the screen, if needed.
+        # Add new aliens at the top of the screen, if needed.
         if not reverseCheat and not slowCheat:
-            baddieAddCounter += 1
-        if baddieAddCounter == ADDNEWBADDIERATE:
-            baddieAddCounter = 0
-            baddieSize = random.randint(BADDIEMINSIZE, BADDIEMAXSIZE)
-            newBaddie = {'rect': pygame.Rect(random.randint(0, WINDOWWIDTH - baddieSize), 0 - baddieSize, baddieSize, baddieSize),
-                        'speed': random.randint(BADDIEMINSPEED, BADDIEMAXSPEED),
-                        'surface':pygame.transform.scale(baddieImage, (baddieSize, baddieSize)),
+            alienAddCounter += 1
+        if alienAddCounter == ADDNEWALIENRATE:
+            alienAddCounter = 0
+            alienSize = random.randint(ALIENMINSIZE, ALIENMAXSIZE)
+            newBaddie = {'rect': pygame.Rect(random.randint(0, WINDOWWIDTH - alienSize), 0 - alienSize, alienSize, alienSize),
+                        'speed': random.randint(ALIENMINSPEED, ALIENMAXSPEED),
+                        'surface':pygame.transform.scale(alienImage, (alienSize, alienSize)),
                         }
 
-            baddies.append(newBaddie)
+            aliens.append(newBaddie)
 
         # Move the player around.
         if moveLeft and playerRect.left > 0:
@@ -147,8 +147,8 @@ while True:
         if moveDown and playerRect.bottom < WINDOWHEIGHT:
             playerRect.move_ip(0, PLAYERMOVERATE)
 
-        # Move the baddies down.
-        for b in baddies:
+        # Move the aliens down.
+        for b in aliens:
             if not reverseCheat and not slowCheat:
                 b['rect'].move_ip(0, b['speed'])
             elif reverseCheat:
@@ -156,10 +156,10 @@ while True:
             elif slowCheat:
                 b['rect'].move_ip(0, 1)
 
-        # Delete baddies that have fallen past the bottom.
-        for b in baddies[:]:
+        # Delete aliens that have fallen past the bottom.
+        for b in aliens[:]:
             if b['rect'].top > WINDOWHEIGHT:
-                baddies.remove(b)
+                aliens.remove(b)
 
         # Draw the game world on the window.
         windowSurface.fill(BACKGROUNDCOLOR)
@@ -171,14 +171,14 @@ while True:
         # Draw the player's rectangle.
         windowSurface.blit(playerImage, playerRect)
 
-        # Draw each baddie.
-        for b in baddies:
+        # Draw each alien.
+        for b in aliens:
             windowSurface.blit(b['surface'], b['rect'])
 
         pygame.display.update()
 
-        # Check if any of the baddies have hit the player.
-        if playerHasHitBaddie(playerRect, baddies):
+        # Check if any of the aliens have hit the player.
+        if playerHasHitBaddie(playerRect, aliens):
             if score > topScore:
                 topScore = score # set new top score
             break
