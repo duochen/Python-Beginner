@@ -130,12 +130,12 @@ while True:
         if alienAddCounter == ADDNEWALIENRATE:
             alienAddCounter = 0
             alienSize = random.randint(ALIENMINSIZE, ALIENMAXSIZE)
-            newBaddie = {'rect': pygame.Rect(random.randint(0, WINDOWWIDTH - alienSize), 0 - alienSize, alienSize, alienSize),
+            newAlien = {'rect': pygame.Rect(random.randint(0, WINDOWWIDTH - alienSize), 0 - alienSize, alienSize, alienSize),
                         'speed': random.randint(ALIENMINSPEED, ALIENMAXSPEED),
                         'surface':pygame.transform.scale(alienImage, (alienSize, alienSize)),
                         }
 
-            aliens.append(newBaddie)
+            aliens.append(newAlien)
 
         # Move the player around.
         if moveLeft and playerRect.left > 0:
