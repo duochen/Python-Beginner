@@ -27,7 +27,7 @@ def waitForPlayerToPressKey():
                     terminate()
                 return
 
-def playerHasHitBaddie(playerRect, aliens):
+def playerHasHitAlien(playerRect, aliens):
     for b in aliens:
         if playerRect.colliderect(b['rect']):
             return True
@@ -43,7 +43,7 @@ def drawText(text, font, surface, x, y):
 pygame.init()
 mainClock = pygame.time.Clock()
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
-pygame.display.set_caption('Dodger')
+pygame.display.set_caption('Alien Invasion')
 pygame.mouse.set_visible(False)
 
 # Set up the fonts.
@@ -178,7 +178,7 @@ while True:
         pygame.display.update()
 
         # Check if any of the aliens have hit the player.
-        if playerHasHitBaddie(playerRect, aliens):
+        if playerHasHitAlien(playerRect, aliens):
             if score > topScore:
                 topScore = score # set new top score
             break
