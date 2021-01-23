@@ -1,6 +1,9 @@
 Requirement:
 Write a Python program to get the last part of a string before a specified character.
 
+HINT:
+Use string's method rsplit(). Please refer to https://www.w3schools.com/python/ref_string_rsplit.asp
+
 Sample Result:
 Sample Input: 
 https://www.w3resource.com/python-exercises/string
