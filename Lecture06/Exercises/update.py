@@ -1,0 +1,13 @@
+d = dict(goldendrod=1, indigo=2, seashell=3)
+print("d: ", d)
+e = d.copy()
+print("e: ", e)
+f = dict(e)
+print("f: ", f)
+g = dict(wheat=7, khaki=8, crimson=9)
+f.update(g)
+print("f after update: ", f)
+stocks = {'GOOG': 891, 'AAPL': 416}
+print('stocks: ', stocks)
+stocks.update({'GOOG':999, 'YHOO': 25})
+print('stocks after update: ', stocks)
