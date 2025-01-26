@@ -31,7 +31,7 @@ RADIUS = 20
 gap = 15
 letters = []
 startx = round((WIDTH - (RADIUS * 2 + gap) * 13) / 2)
-starty = 450
+starty = 500
 
 for i in range(26):
     x = startx + gap * 2 + ((RADIUS * 2 + gap) * (i % 13))
@@ -71,7 +71,7 @@ def draw():
             screen.blit(text, (x - text.get_width() // 2, y - text.get_height() // 2))
 
     # Draw hangman
-    screen.blit(images[attempts], (150, 100))
+    screen.blit(images[attempts], (100, 70))
     pygame.display.update()
 
 # Display message
