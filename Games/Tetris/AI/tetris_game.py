@@ -144,6 +144,11 @@ def drawSquare(painter, x, y, val, s):
     if val == 0:
         return
 
+    # Convert to integers for PyQt drawing methods
+    x = int(x)
+    y = int(y)
+    s = int(s)
+
     color = QColor(colorTable[val])
     painter.fillRect(x + 1, y + 1, s - 2, s - 2, color)
 
